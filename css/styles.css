@@ -1,5 +1,5 @@
 body {
-    background: url(https://pixabay.com/get/g60dea8e51dcd28f8ff3c6f723870fc61f0732e7c6bbd21bf52ba6cd005605ff5432d06b164dc57218be3d9747cb420ff9bd4e6906772e5e267a73136223e08d6_1920.jpg);
+    background: url(/images/bg-image.jpg);
     background-size: 100%;
     background-position-x: left;
     /* background-size: 100%; */
@@ -60,9 +60,28 @@ p, label {
     border-radius: 0;
 }
 
-@media only screen and (max-width: 1260px) {
+@media only screen and (max-width: 1300px){
     body {
         background-size: auto;
         background-position-x: center;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .login-container {
+        width: 350px;
+        height: 400px;
+        margin: auto;
+    }
+
+    .sign-up-container {
+        width: 350px;
+        height: 480px;
+        margin: auto;
+    }
+    .login-container-brand-name-box, .sign-up-container-brand-name-box {
+        margin-top: 1rem;
+        text-align: center;
     }
 }
