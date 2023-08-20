@@ -1,18 +1,23 @@
 body {
-    background-color: #355C7D;
+    background: url(https://pixabay.com/get/g60dea8e51dcd28f8ff3c6f723870fc61f0732e7c6bbd21bf52ba6cd005605ff5432d06b164dc57218be3d9747cb420ff9bd4e6906772e5e267a73136223e08d6_1920.jpg);
+    background-size: 100%;
+    background-position-x: left;
+    /* background-size: 100%; */
+    /* background-color: #355C7D; */
 }
 
 p, label {
     font-size: 1.2rem;
 }
 
-.input-style{
+.input-style {
     border-color: #8f8f8f;
 }
 
-.login-container {
+.login-container, .sign-up-container {
     border-radius: 15px;
     background-color: #FFF;
+    background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -23,7 +28,11 @@ p, label {
     margin: auto;
 }
 
-.login-container-brand-name-box {
+.sign-up-container {
+    height: 500px;
+}
+
+.login-container-brand-name-box, .sign-up-container-brand-name-box {
     margin-top: 1rem;
     text-align: center;
 }
@@ -35,10 +44,25 @@ p, label {
 }
 
 .credentials-container {
-    height: 195px;
-    padding: 15px;
+    height: auto;
+    padding: auto;
 }
 
-.button-style{
+.small-font {
+    font-size: 0.7rem;
+}
+
+.checkbox-styling {
+    margin-right: 0.5rem;
+}
+
+.button-style {
     border-radius: 0;
+}
+
+@media only screen and (max-width: 1260px) {
+    body {
+        background-size: auto;
+        background-position-x: center;
+    }
 }
